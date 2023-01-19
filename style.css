@@ -1,10 +1,42 @@
 * {
   box-sizing: border-box;
   font-family: inherit;
-  font-size: 100%;
   margin: 0;
   padding: 0;
+  border: 1px solid gray;
 }
 :root {
   font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+.sidebar {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.logo-container {
+  margin-top: 25vh;
+  height: 10vw;
+}
+.pic-credits {
+  margin-top: auto;
+}
+.main {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.greeting {
+  margin: 0 15vw 10vw 5vw;
+}
+.form {
+  height: 25vw;
 }
