@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "odinFont";
+  src: url("./Norse-Bold.otf");
+}
 * {
   box-sizing: border-box;
   font-family: inherit;
@@ -13,7 +17,14 @@ body {
   display: flex;
   align-items: stretch;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sidebar {
+  background-image: url("https://i.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g");
+  background-position: right;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -23,9 +34,17 @@ body {
 .logo-container {
   margin-top: 25vh;
   height: 10vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  font-family: "odinFont";
+  font-size: 7vw;
+  color: white;
+}
+.logo-container > img {
+  height: 9vw;
 }
 .pic-credits {
   margin-top: auto;
+  text-align: center;
 }
 .main {
   flex: 2 1 auto;
