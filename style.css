@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: "odinFont";
   src: url("./Norse-Bold.otf");
@@ -52,9 +53,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  font-family: "Roboto", sans-serif;
 }
 .greeting {
-  margin: 0 15vw 10vw 5vw;
+  margin: 0 10vw 5vw 5vw;
+  font-size: 2rem;
 }
 .form {
   height: 25vw;
