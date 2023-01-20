@@ -17,14 +17,67 @@
     </div>
     <div class="main">
       <header class="header">
-        <h2 class="greeting">
+        <h2 class="greeting h2">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.<br />Sign
           up <em>now</em> to get started.<br /><br />You <em>know</em> you want
           to.
         </h2>
       </header>
-      <form action="./" method="post" class="form">form</form>
+      <form action="./" method="post" class="form">
+        <h2 class="h2">Let's do this!</h2>
+        <div class="form-container">
+          <label for="first-name"
+            >First name
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              autocomplete="name"
+              required
+              placeholder="required" /></label
+          ><label for="last-name"
+            >Last name
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              autocomplete="family-name"
+              placeholder=" " /></label
+          ><label for="email"
+            >Email<input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              placeholder="required" /></label
+          ><label for="phone"
+            >Phone number<input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              placeholder=" " /></label
+          ><label for="password"
+            >Password<input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="off"
+              required
+              placeholder="required" /></label
+          ><label for="password-repeat"
+            >Confirm password<input
+              type="password"
+              id="password-repeat"
+              name="password-repeat"
+              autocomplete="off"
+              required
+              placeholder="required"
+          /></label>
+        </div>
+      </form>
       <footer class="footer">
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="index.html">Log in</a></p>
