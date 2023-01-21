@@ -24,11 +24,11 @@
           to.
         </h2>
       </header>
-      <form action="./" method="post" class="form">
+      <form action="./" method="post" class="form" id="sign-up">
         <h2 class="h2">Let's do this!</h2>
         <div class="form-container">
           <label for="first-name"
-            >First name
+            >First name *
             <input
               type="text"
               id="first-name"
@@ -45,7 +45,7 @@
               autocomplete="family-name"
               placeholder=" " /></label
           ><label for="email"
-            >Email<input
+            >Email *<input
               type="email"
               id="email"
               name="email"
@@ -60,26 +60,29 @@
               autocomplete="tel"
               placeholder=" " /></label
           ><label for="password"
-            >Password<input
+            >Password *<input
               type="password"
               id="password"
               name="password"
               autocomplete="off"
               required
-              placeholder="required" /></label
+              placeholder="required"
+            />
+            <p class="password-hint"></p> </label
           ><label for="password-repeat"
-            >Confirm password<input
+            >Confirm password *<input
               type="password"
               id="password-repeat"
               name="password-repeat"
               autocomplete="off"
               required
               placeholder="required"
-          /></label>
+            />
+          </label>
         </div>
       </form>
       <footer class="footer">
-        <button type="submit">Create Account</button>
+        <button type="submit" form="sign-up">Create Account</button>
         <p>Already have an account? <a href="index.html">Log in</a></p>
       </footer>
     </div>
