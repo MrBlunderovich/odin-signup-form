@@ -24,7 +24,7 @@
           to.
         </h2>
       </header>
-      <form action="./" method="post" class="form" id="sign-up">
+      <form action="#" method="post" class="form" id="sign-up">
         <h2 class="h2">Let's do this!</h2>
         <div class="form-container">
           <label for="first-name"
@@ -60,20 +60,27 @@
               autocomplete="tel"
               placeholder=" " /></label
           ><label for="password"
-            >Password *<input
+            >Password *
+            <span class="password-requirements">3-20 characters</span
+            ><input
               type="password"
               id="password"
               name="password"
+              minlength="3"
+              maxlength="20"
               autocomplete="off"
               required
               placeholder="required"
             />
-            <p class="password-hint"></p> </label
+            <p class="password-hint">* passwords do not match</p> </label
           ><label for="password-repeat"
-            >Confirm password *<input
+            >Confirm password *
+            <input
               type="password"
               id="password-repeat"
               name="password-repeat"
+              minlength="3"
+              maxlength="20"
               autocomplete="off"
               required
               placeholder="required"
@@ -82,7 +89,7 @@
         </div>
       </form>
       <footer class="footer">
-        <button type="submit" form="sign-up">Create Account</button>
+        <button id="submit" type="submit" form="sign-up">Create Account</button>
         <p>Already have an account? <a href="index.html">Log in</a></p>
       </footer>
     </div>

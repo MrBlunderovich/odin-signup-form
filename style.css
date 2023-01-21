@@ -106,9 +106,16 @@ body {
 .form-container input:not(:placeholder-shown):not(:focus):invalid {
   border-color: rgb(255, 111, 54);
 }
+.password-requirements {
+  color: gray;
+}
 .password-hint {
   height: 1rem;
   color: red;
+  opacity: 0;
+}
+.error ~ p {
+  opacity: 1;
 }
 /* label[for="password"]:after,
 label[for="password-repeat"]:after {
